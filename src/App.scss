@@ -1,0 +1,155 @@
+body {
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+}
+
+@keyframes myfirst {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes knowmore {
+  from {
+    top: -35px;
+  }
+  to {
+    top: -30px;
+  }
+}
+
+.App {
+  // background-color: red;
+  width: 100vw;
+  height: 100%;
+  header {
+    height: 5vw;
+    width: 100vw;
+    position: fixed; // background: yellow;
+    nav {
+      margin: 0 2.5vw; // border-bottom: 1px solid #bbb;
+      ul {
+        overflow: hidden;
+        li {
+          height: 5vw;
+          line-height: 5vw;
+          float: left;
+          margin-right: 2.1vw;
+          font-size: 1vw;
+          cursor: pointer;
+          opacity: .5;
+        }
+        .ofo_nav_active {
+          opacity: 1;
+        }
+      }
+    }
+    .titile {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 10vw;
+      height: 2.1vw;
+      margin-left: -5vw;
+      margin-top: -1.05vw;
+    }
+    .ofo_home_header_line {
+      width: 95vw;
+      margin: 0 auto;
+      height: 1px;
+      background-color: #fff;
+      opacity: .3;
+    }
+  } //首页
+  .ofo_home {
+    header {
+      position: fixed;
+      z-index: 2;
+      li {
+        color: #fff;
+        font-weight: 100;
+      }
+    }
+    .scrolled {
+      background-color: #fff;
+      li {
+        color: #000;
+        font-weight: 500;
+      }
+
+    }
+    .mainVideo {
+      width: 100vw;
+    }
+    .ofo_home_tip {
+      width: 43.8vw;
+      height: 13.5vw;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      margin-left: -21.9vw; // background-color: red;
+      .circle1 {
+        position: absolute;
+        width: 13.3vw;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        animation: myfirst 1s linear forwards 3s normal;
+      }
+      .circle2 {
+        position: absolute;
+        width: 6vw;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        animation: myfirst 1s linear forwards 3s normal;
+      }
+      .title {
+        position: absolute;
+        left: 50%;
+        top: 6.1vw;
+        opacity: 0;
+        width: 37.3vw;
+        margin-left: -18.65vw;
+        animation: myfirst 1s linear forwards 1s normal;
+      }
+      .text {
+        // width: 30vw;
+        top: 11.5vw; // margin-left: -15vw;
+        color: #fff;
+        opacity: 0;
+        font-size: 1.2vw;
+        text-align: center;
+        margin-top: 12vw;
+        animation: myfirst 1s linear forwards 2s normal;
+      }
+    }
+    .know_more {
+      width: 8vw; // background: red;
+      text-align: center;
+      margin: 0 auto;
+      position: absolute;
+      top: 48vw;
+      left: 50%;
+      margin-left: -4vw;
+      cursor: pointer;
+      .know_more_img {
+        position: absolute;
+        top: -35px;
+        left: 50%;
+        margin-left: -8px;
+        animation: knowmore 1s linear 1s infinite alternate;
+      }
+      p {
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+  } //新闻
+  //关于
+  //商业合作
+}
